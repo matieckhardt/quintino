@@ -1,0 +1,37 @@
+#intro-services{
+  height: 350px;
+}
+.breadcrumb{
+  background-color: #ddd;
+}
+#servicios{
+  padding: 0;
+}
+#servicios .col-3{
+  background: #ddd;
+  padding: 2rem;
+}
+#servicios .col-3 .nav-pills .nav-link.active{
+  background-color: #167;
+}
+#servicios .col-9{
+  padding: 2rem 4rem;
+  background: #fff;
+}
+#servicios .col-9 li{
+  font-size: .8rem;
+  line-height: 1.75;
+}
+#servicios .img-service{
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+#img-s1,#img-s2,#img-s3,#img-s4,#img-s5,#img-s6,
+#img-s7,#img-s8,#img-s9,#img-s10,#img-s11,#img-s12{
+  background-size: cover!important;
+  background-position: center;
+}
+#footer{
+  clear: both;
+}

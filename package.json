@@ -1,0 +1,33 @@
+{
+  "name": "quintino-node",
+  "version": "2.0.0",
+  "description": "Esta es web de Quintino MHS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/retojonatan/quintino-node.git"
+  },
+  "keywords": [],
+  "author": "retojonatan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/retojonatan/quintino-node/issues"
+  },
+  "homepage": "https://github.com/retojonatan/quintino-node#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "mongoose": "^5.13.3",
+    "nodemailer": "^6.6.0",
+    "googleapis": "^85.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

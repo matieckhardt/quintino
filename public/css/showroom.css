@@ -1,0 +1,329 @@
+/* SHOWROOM */
+#intro-showroom{
+  height: 350px;
+}
+.loader {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/loader.gif) 50% 50% no-repeat rgb(249, 249, 249);
+  background-size: 180px;
+  opacity: 1;
+}
+#market{
+  display: flex;
+}
+#filtros{
+  float: left;
+  width: 20%;
+  padding: 25px;
+  background: #ddd;
+}
+.breadcrumb{
+  background-color: #ddd;
+}
+#filtros .filtros-on{
+  margin-bottom: 10px;
+}
+#filtros .filtros-on h3{
+  background-color: #045;
+  padding: 5px 15px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#filtros .filtros-on .form-check{
+  background-color: #277;
+  display: block;
+  padding:0 10px;
+  margin-bottom: 5px;
+}
+#filtros .filtros-on .form-check a{
+  color: #fff;
+}
+#filtros .filtro-check{
+  list-style: "#";
+  padding-left: 6px;
+  color: #222;
+}
+#filtros .filtro-divisor a:hover{
+  text-decoration: none;
+}
+#filtros .form-check-label{
+  color: #222;
+  line-height: 1.1;
+}
+#filtros .filtro-divisor{
+  padding: 0;
+}
+#filtros .filtro-divisor h6{
+  background-color: #ffb050;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: .9rem;
+}
+#filtros .form-check-label{
+  font-size: .8rem;
+}
+#filtros .filtro-lista{
+  border-top: 2px solid #555;
+  padding-top: 7px;
+  padding-left: 12px;
+}
+#showroom{
+  float: right;
+  width: 80%;
+  padding: 20px;
+}
+#showroom .card{
+  height: 555px;
+}
+#showroom .card:hover{
+  -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,.07), 0 10px 15px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.07), 0 10px 15px 0 rgba(0,0,0,.1);
+}
+#showroom .card-title{
+  font-weight: bold;
+  color: #057;
+}
+#showroom .card-text{
+  font-size: .975rem;
+}
+#showroom .card-footer{
+  margin-top: 0;
+}
+#showroom .carouseles img{
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+}
+#showroom nav .page-link:hover{
+  background: #ffa010;
+}
+#showroom nav .page-link{
+  color: #111;
+  background: #ffb050;
+  border: 2px solid white;
+}
+#showroom nav .page-item.disabled .page-link{
+  color: #555!important;
+}
+#showroom .fa-lg {
+  padding: 5px!important;
+  font-size: 2em!important;
+}
+#showroom .temp-icons{
+  position: absolute;
+  bottom: 65px;
+  right: 10px;
+}
+#showroom .fa-snowflake{
+  color: #9bb!important;
+}
+#showroom .fa-thermometer-empty{
+  color: #067!important;
+}
+#showroom .fa-thermometer-half{
+  color: #ffb050!important;
+}
+#showroom .fa-thermometer-full{
+  color: rgb(220, 53, 69)!important;
+}
+#footer{
+  clear: both;
+}
+@media only screen and (min-width:1600px) {
+  #sidebar-sticky{
+    padding: 10px;
+  }
+  #filtros .filtro-divisor h6{
+    font-size: 1rem;
+  }
+  #filtros .form-check-label{
+    font-size: .9rem;
+  }
+  #showroom {
+    width: 82%;
+  }
+  #showroom .card {
+    height: 655px;
+  }
+  .col-xxl-3{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media only screen and (max-width:1600px) {
+    #showroom .card-text{
+    font-size: .9rem;
+    }
+    #showroom .carouseles img {
+        height: 210px;
+    }
+
+}
+@media only screen and (max-width:1280px) {
+  header #contact-intro .mr-n6 {
+    margin-right: -10px;
+  }
+  #showroom .carouseles img {
+    height: 175px;
+  }
+  #showroom .card-body{
+    padding: 1rem;
+  }
+  #showroom .card{
+    height: 560px;
+  }
+  #showroom .card-text{
+    font-size: .81rem;
+  }
+  #showroom .card-title{
+    font-size: .88rem;
+    margin-bottom: .45rem;
+  }
+  #showroom .card-footer{
+    padding: .75rem;
+  }
+  #showroom .card .pr-3{
+    padding-right: 5px!important;
+  }
+}
+@media only screen and (max-width:860px) {
+  #header, #filtros{
+    display: none;
+  }
+  #showroom{
+    width: 100%;
+  }
+  #nav-sticky{
+    min-width: 100%;
+  }
+  #market{
+    justify-content: center;
+  }
+}
+
+#modal-show .slick-prev{
+  left: -45px !important;
+}
+#modal-show .slick-next{
+  right: -25px !important;
+}
+#modal-show .slick-prev, .slick-next {
+    top: 50vh;
+}
+#modal-show .modal-xg{
+  max-width: 88vw !important;
+}
+#modal-show h1{
+  padding-bottom: 15px;
+}
+#modal-show p{
+  line-height: 1.2;
+  text-align: justify;
+}
+#modal-show .list-group-item,
+#modal-show .btn-block{
+  line-height: 1;
+  padding: 0.9rem;
+}
+
+
+
+/*++++++++++++++++++++++ACA VIENE EL MODAL FINAL+++++++++++++++*/
+#modalShowroom .modal-xg{
+  max-width: 1170px;
+}
+#modalShowroom .slick-prev, #modalShowroom .slick-next {
+  top: 45vh;
+}
+#modalShowroom .slick-prev {
+  left: -45px;
+}
+#modalShowroom .slick-next {
+  right: -30px;
+}
+#modalShowroom h2{
+  color: #066;
+  font-weight: bold;
+}
+#modalShowroom h4{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #166;
+  margin-bottom: 4px;
+}
+#modalShowroom p{
+  font-size: 13px;
+  line-height: normal;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+#modalShowroom .diapo {
+  overflow-y: auto;
+  max-height: 90vh;
+}
+#modalShowroom .diapo font,
+#modalShowroom .diapo p,
+#modalShowroom .diapo span,
+#modalShowroom .diapo p span{
+  line-height: 1.2 !important;
+  font-size: 14px!important;
+  font-family: "urw-din", 'Varela Round', sans-serif !important;
+}
+#modalShowroom .diapo .row .col-md-4 img{
+  min-height: 200px;
+  max-height: 220px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+#modalShowroom ul{
+  padding-left: 10px;
+  margin-left: 15px;
+}
+#modalShowroom ol{
+  padding-left: 10px;
+  margin-left: 12px;
+}
+#modalShowroom .fa-ul .fa-li i,
+#modalShowroom ol li{
+  color: #055;
+}
+#modalShowroom li, #modalShowroom a{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#modalShowroom h6{
+  font-size: 14px;
+  color: #166;
+  font-weight: bold;
+  border-bottom: 1px solid #055;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.spinner {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 90%;
+}
+.spinner .spinner-grow, .spinner .spinner-border{
+  color: #066!important;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.triangulo{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}

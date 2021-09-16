@@ -1,0 +1,28 @@
+/* SHOWROOM */
+#intro-form{
+  height: 350px;
+}
+h4{
+  line-height: inherit;
+}
+.row{
+  padding: 0;
+}
+.row .col-sm-7{
+  padding-left: 0;
+}
+.row .col-sm-5{
+  padding-left: 30px;
+}
+.row form{
+  padding-top: 20px;
+}
+@media (max-width:800px){
+  #form-cv{
+    padding: 20px!important;
+    margin: 0!important;
+  }
+  #form-cv .col-sm-5 img{
+    margin-top: 30px;
+  }
+}

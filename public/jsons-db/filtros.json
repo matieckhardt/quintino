@@ -1,0 +1,416 @@
+[
+    {
+        "NombreCategoria": "Funcion y tecnologia",
+        "ListaSubcategorias": [
+            {
+                "SubcategoriaId": 1,
+                "Nombre": "Almacenamiento automatizado",
+                "CategoriaId": 1,
+                "NombreCorto": "1"
+            },
+            {
+                "SubcategoriaId": 2,
+                "Nombre": "Sorting –Clasificacion-",
+                "CategoriaId": 1,
+                "NombreCorto": "2"
+            },
+            {
+                "SubcategoriaId": 3,
+                "Nombre": "Picking -Preparacion de pedido-",
+                "CategoriaId": 1,
+                "NombreCorto": "3"
+            },
+            {
+                "SubcategoriaId": 4,
+                "Nombre": "Lineas de produccion y ensamble",
+                "CategoriaId": 1,
+                "NombreCorto": "4"
+            },
+            {
+                "SubcategoriaId": 5,
+                "Nombre": "Carga automatizada de Camiones",
+                "CategoriaId": 1,
+                "NombreCorto": "5"
+            },
+            {
+                "SubcategoriaId": 6,
+                "Nombre": "Celdas de paletizado automatico",
+                "CategoriaId": 1,
+                "NombreCorto": "6"
+            },
+            {
+                "SubcategoriaId": 7,
+                "Nombre": "Sistema de manejo de equipaje",
+                "CategoriaId": 1,
+                "NombreCorto": "7"
+            },
+            {
+                "SubcategoriaId": 8,
+                "Nombre": "Terminales de carga",
+                "CategoriaId": 1,
+                "NombreCorto": "8"
+            },
+            {
+                "SubcategoriaId": 9,
+                "Nombre": "Sistemas de Manipulacion Almacenamiento Intensivo y Flujo para la Industria de neumaticos",
+                "CategoriaId": 1,
+                "NombreCorto": "9"
+            },
+            {
+                "SubcategoriaId": 10,
+                "Nombre": "Packing",
+                "CategoriaId": 1,
+                "NombreCorto": "10"
+            },
+            {
+                "SubcategoriaId": 11,
+                "Nombre": "CrossDocking",
+                "CategoriaId": 1,
+                "NombreCorto": "11"
+            },
+            {
+                "SubcategoriaId": 12,
+                "Nombre": "Fulfillment",
+                "CategoriaId": 1,
+                "NombreCorto": "12"
+            },
+            {
+                "SubcategoriaId": 13,
+                "Nombre": "Logistica",
+                "CategoriaId": 1,
+                "NombreCorto": "13"
+            },
+            {
+                "SubcategoriaId": 14,
+                "Nombre": "Industria",
+                "CategoriaId": 1,
+                "NombreCorto": "14"
+            }
+        ]
+    },
+    {
+        "NombreCategoria": "Industria",
+        "ListaSubcategorias": [
+            {
+                "SubcategoriaId": 15,
+                "Nombre": "Bienes de consumo",
+                "CategoriaId": 2,
+                "NombreCorto": "A"
+            },
+            {
+                "SubcategoriaId": 16,
+                "Nombre": "Desarrollos especiales",
+                "CategoriaId": 2,
+                "NombreCorto": "B"
+            },
+            {
+                "SubcategoriaId": 17,
+                "Nombre": "Aeropuertos y terminales de carga aérea",
+                "CategoriaId": 2,
+                "NombreCorto": "C"
+            },
+            {
+                "SubcategoriaId": 18,
+                "Nombre": "Alimenticia",
+                "CategoriaId": 2,
+                "NombreCorto": "D"
+            },
+            {
+                "SubcategoriaId": 19,
+                "Nombre": "Farma y Laboratorios",
+                "CategoriaId": 2,
+                "NombreCorto": "E"
+            },
+            {
+                "SubcategoriaId": 20,
+                "Nombre": "Agroindustria",
+                "CategoriaId": 2,
+                "NombreCorto": "F"
+            },
+            {
+                "SubcategoriaId": 21,
+                "Nombre": "Retail",
+                "CategoriaId": 2,
+                "NombreCorto": "G"
+            },
+            {
+                "SubcategoriaId": 22,
+                "Nombre": "E-Commerce",
+                "CategoriaId": 2,
+                "NombreCorto": "H"
+            },
+            {
+                "SubcategoriaId": 23,
+                "Nombre": "3PL",
+                "CategoriaId": 2,
+                "NombreCorto": "I"
+            },
+            {
+                "SubcategoriaId": 24,
+                "Nombre": "Logistica",
+                "CategoriaId": 2,
+                "NombreCorto": "J"
+            },
+            {
+                "SubcategoriaId": 25,
+                "Nombre": "Paqueteria y Envios",
+                "CategoriaId": 2,
+                "NombreCorto": "K"
+            },
+            {
+                "SubcategoriaId": 26,
+                "Nombre": "Industrias Especiales",
+                "CategoriaId": 2,
+                "NombreCorto": "L"
+            }
+        ]
+    },
+    {
+        "NombreCategoria": "Equipos",
+        "ListaSubcategorias": [
+            {
+                "SubcategoriaId": 36,
+                "Nombre": "Almacenamiento Dinamico",
+                "CategoriaId": 3,
+                "NombreCorto": "a"
+            },
+            {
+                "SubcategoriaId": 37,
+                "Nombre": "AGV Vehiculos Guiados Automaticamente",
+                "CategoriaId": 3,
+                "NombreCorto": "b"
+            },
+            {
+                "SubcategoriaId": 38,
+                "Nombre": "Almacenamiento Automatico",
+                "CategoriaId": 3,
+                "NombreCorto": "c"
+            },
+            {
+                "SubcategoriaId": 39,
+                "Nombre": "Envoltura y Estrechado",
+                "CategoriaId": 3,
+                "NombreCorto": "d"
+            },
+            {
+                "SubcategoriaId": 40,
+                "Nombre": "Fast2Check ",
+                "CategoriaId": 3,
+                "NombreCorto": "e"
+            },
+            {
+                "SubcategoriaId": 41,
+                "Nombre": "Packing",
+                "CategoriaId": 3,
+                "NombreCorto": "f"
+            },
+            {
+                "SubcategoriaId": 42,
+                "Nombre": "Pallet Shuttle",
+                "CategoriaId": 3,
+                "NombreCorto": "g"
+            },
+            {
+                "SubcategoriaId": 43,
+                "Nombre": "Palletizado",
+                "CategoriaId": 3,
+                "NombreCorto": "h"
+            },
+            {
+                "SubcategoriaId": 44,
+                "Nombre": "Picking Automatico",
+                "CategoriaId": 3,
+                "NombreCorto": "i"
+            },
+            {
+                "SubcategoriaId": 45,
+                "Nombre": "Plataformas para Terminales de Cargas Aereas",
+                "CategoriaId": 3,
+                "NombreCorto": "j"
+            },
+            {
+                "SubcategoriaId": 46,
+                "Nombre": "RGV Vehiculos Rielificados Automaticos",
+                "CategoriaId": 3,
+                "NombreCorto": "k"
+            },
+            {
+                "SubcategoriaId": 47,
+                "Nombre": "Sorting - Clasificacion",
+                "CategoriaId": 3,
+                "NombreCorto": "l"
+            },
+            {
+                "SubcategoriaId": 48,
+                "Nombre": "Transportadores",
+                "CategoriaId": 3,
+                "NombreCorto": "m"
+            },
+            {
+                "SubcategoriaId": 49,
+                "Nombre": "Transportadores para carga y descarga",
+                "CategoriaId": 3,
+                "NombreCorto": "n"
+            }
+        ]
+    },
+    {
+        "NombreCategoria": "Partners",
+        "ListaSubcategorias": [
+            {
+                "SubcategoriaId": 27,
+                "Nombre": "Interroll",
+                "CategoriaId": 4,
+                "NombreCorto": "Rol"
+            },
+            {
+                "SubcategoriaId": 28,
+                "Nombre": "Intralox",
+                "CategoriaId": 4,
+                "NombreCorto": "Lox"
+            },
+            {
+                "SubcategoriaId": 29,
+                "Nombre": "Cassioli",
+                "CategoriaId": 4,
+                "NombreCorto": "Cas"
+            },
+            {
+                "SubcategoriaId": 30,
+                "Nombre": "Comau",
+                "CategoriaId": 4,
+                "NombreCorto": "Mau"
+            },
+            {
+                "SubcategoriaId": 31,
+                "Nombre": "Signode",
+                "CategoriaId": 4,
+                "NombreCorto": "Sig"
+            },
+            {
+                "SubcategoriaId": 32,
+                "Nombre": "Qimarox",
+                "CategoriaId": 4,
+                "NombreCorto": "Qim"
+            },
+            {
+                "SubcategoriaId": 33,
+                "Nombre": "Berrmak",
+                "CategoriaId": 4,
+                "NombreCorto": "Mak"
+            },
+            {
+                "SubcategoriaId": 34,
+                "Nombre": "Ambaflex",
+                "CategoriaId": 4,
+                "NombreCorto": "Amb"
+            },
+            {
+                "SubcategoriaId": 35,
+                "Nombre": "Rolling On - Interroll",
+                "CategoriaId": 4,
+                "NombreCorto": "Ron"
+            },
+            {
+                "SubcategoriaId": 50,
+                "Nombre": "Power Stow",
+                "CategoriaId": 4,
+                "NombreCorto": "tow"
+            },
+            {
+                "SubcategoriaId": 51,
+                "Nombre": "CMC",
+                "CategoriaId": 4,
+                "NombreCorto": "CMC"
+            }
+        ]
+    },
+    {
+        "NombreCategoria": "Tipo de carga",
+        "ListaSubcategorias": [
+            {
+                "SubcategoriaId": 52,
+                "Nombre": "Caja",
+                "CategoriaId": 5,
+                "NombreCorto": "caj"
+            },
+            {
+                "SubcategoriaId": 53,
+                "Nombre": "Pallet",
+                "CategoriaId": 5,
+                "NombreCorto": "Pal"
+            },
+            {
+                "SubcategoriaId": 54,
+                "Nombre": "Contenedor aéreo",
+                "CategoriaId": 5,
+                "NombreCorto": "Coa"
+            },
+            {
+                "SubcategoriaId": 55,
+                "Nombre": "Cubetas - totes o bandejas",
+                "CategoriaId": 5,
+                "NombreCorto": "tas"
+            },
+            {
+                "SubcategoriaId": 56,
+                "Nombre": "Granel",
+                "CategoriaId": 5,
+                "NombreCorto": "gra"
+            },
+            {
+                "SubcategoriaId": 57,
+                "Nombre": "Bultos",
+                "CategoriaId": 5,
+                "NombreCorto": "bul"
+            },
+            {
+                "SubcategoriaId": 58,
+                "Nombre": "Polybags",
+                "CategoriaId": 5,
+                "NombreCorto": "pol"
+            },
+            {
+                "SubcategoriaId": 59,
+                "Nombre": "Cargas especiales",
+                "CategoriaId": 5,
+                "NombreCorto": "ces"
+            },
+            {
+                "SubcategoriaId": 60,
+                "Nombre": "Empaque secundario",
+                "CategoriaId": 5,
+                "NombreCorto": "ems"
+            }
+        ]
+    },
+    {
+        "NombreCategoria": "Temperatura de operación",
+        "ListaSubcategorias": [
+            {
+                "SubcategoriaId": 61,
+                "Nombre": "Entornos de temperatura elevada",
+                "CategoriaId": 6,
+                "NombreCorto": "ete"
+            },
+            {
+                "SubcategoriaId": 62,
+                "Nombre": "Entornos temperatura ambiente",
+                "CategoriaId": 6,
+                "NombreCorto": "eta"
+            },
+            {
+                "SubcategoriaId": 63,
+                "Nombre": "Entornos frios",
+                "CategoriaId": 6,
+                "NombreCorto": "efr"
+            },
+            {
+                "SubcategoriaId": 64,
+                "Nombre": "Entornos congelados",
+                "CategoriaId": 6,
+                "NombreCorto": "eco"
+            }
+        ]
+    }
+]

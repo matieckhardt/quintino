@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKT7FV4T6L"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKT7FV4T6L');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/Download/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/Download/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <script src="/Scripts/Download/d5940e9d76.js"></script>
+    <title>QUINTINO :: MHS</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
+    <link rel="stylesheet" href="//use.typekit.net/ekx7jes.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        
+
+        function BuscarSoluciones1() {
+
+            var palabra = $('#BuscarWeb').val();
+            var url = '/Home/Showroom?filtroEscrito=__param__';
+
+            window.location.href = url.replace('__param__', encodeURIComponent(palabra));
+        }
+
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+
+        function perfiles(e) {
+            e.preventDefault();
+            var perfiles = "";
+            var check1 = $('#check1').is(':checked');
+            var check2 = $('#check2').is(':checked');
+            var check3 = $('#check3').is(':checked');
+            var check4 = $('#check4').is(':checked');
+            var check5 = $('#check5').is(':checked');
+            var check6 = $('#check6').is(':checked');
+            var check7 = $('#check7').is(':checked');
+            var check8 = $('#check8').is(':checked');
+            var check9 = $('#check9').is(':checked');
+            if (check1)
+                perfiles += "Ingenieros y técnicos para el área comercial, ";
+            if (check2)
+                perfiles += "Ingenieros y técnicos para I+D, ";
+            if (check3)
+                perfiles += "Mantenimiento Eléctrico, ";
+            if (check4)
+                perfiles += "Mantenimiento Mecánico, ";
+            if (check5)
+                perfiles += "Producción en Planta de Procesos Metalmecánicos, ";
+            if (check6)
+                perfiles += "Sistemas IT + IoT + Robótica + AI, ";
+            if (check7)
+                perfiles += "Otros perfiles, ";
+            if (check8)
+                perfiles += "Partner, ";
+            if (check9)
+                perfiles += "Proveedor, ";
+
+            if (perfiles.length > 0)
+                perfiles = perfiles.slice(0, -2);
+
+            $('#Perfiles').val(perfiles);
+
+            if (isEmail($('#Email').val())) {
+                submitUserForm();
+            }
+            else {
+                $('#validacionEmail').text('Formato de mail inválido');
+            }
+            function submitUserForm() {
+                var response = grecaptcha.getResponse();
+                if(response.length == 0) {
+                    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+                    return false;
+                }
+                return $("#frm").submit();
+            }
+            function verifyCaptcha() {
+                document.getElementById('g-recaptcha-error').innerHTML = '';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="header">
+        <div id="contact-intro">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-lg-3 mr-auto pl-0">
+                        <a href="/">
+                            <img src="/images/logo.png" alt="Image" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block pl-0">
+                        <div class="quick-contact-icons d-flex">
+                            <div class="icon align-self-start">
+                                <i class="fas fa-phone-volume"></i>
+                            </div>
+                            <div class="text-contact">
+                                <span class="d-block">LLAMANOS</span>
+                                <span class="caption-text">+54.11.4754.5556</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block pl-0">
+                        <div class="quick-contact-icons d-flex">
+                            <div class="icon align-self-start">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="text-contact">
+                                <span class="d-block">EMAIL</span>
+                                <span class="caption-text">info@quintino.com.ar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block px-0 mr-n6">
+                        <div class="quick-contact-icons d-flex">
+                            <div class="icon align-self-start">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="text-contact">
+                                <span class="d-block">HORARIO</span>
+                                <span class="caption-text">Lunes a Viernes de 8 a 17hs.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar py-2 navbar-expand-lg navbar-light bg-light container sticky-top" id="nav-sticky">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-fixed" aria-controls="navbar-fixed" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img class="w-25" src="/images/logo-gris.png"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-fixed">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Novedades <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Servicios <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Soluciones <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Referencias <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Quienes Somos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Contacto <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <a class="px-2" href="" data-toggle="modal" data-target=".search-modal-lg"><i class="fas fa-search fa-2x"></i></a>
+                <a class="px-2" target="_blank" href="https://twitter.com/QuintinoMHS"><i class="fab fa-twitter fa-2x"></i></a>
+                <a class="px-2" target="_blank" href="https://www.linkedin.com/company/quintino/?viewAsMember=true"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a class="px-2" target="_blank" href="https://www.youtube.com/channel/UCM-yKuJZqzeQEieSDEN6Ymg?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ++ Modal de Busqueda ++ -->
+    <div class="modal fade search-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-3">
+                <div class="input-group">
+                    <input type="text" class="form-control pl-4" id="BuscarWeb" placeholder="Buscar en la web">
+                    <div class="input-group-append">
+                        <button class="btn px-3 btn-outline-secondary" onclick="BuscarSoluciones1()" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Descargas de Brochures Espanol -->
+    <div class="modal fade" id="ModalNews" tabindex="-1" role="dialog" aria-labelledby="ModalNewsletter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalNewsletter">Ingrese su mail para iniciar la descarga</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="email" value="" placeholder="" name="email" class="required email form-control" id="MailNews">
+                        <span class="input-group-btn">
+                            <button class="btn px-3 btn-outline-secondary" type="button">
+                                Descargar
+                            </button>
+                        </span>
+                    </div>
+                    <div class="checkbox mt-3">
+                        <label>
+                            <input type="checkbox" value="" checked>
+                            Acepto suscribirme al newsletter.
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Descargas de Brochures Ingles -->
+    <div class="modal fade" id="ModalNewsEng" tabindex="-1" role="dialog" aria-labelledby="ModalNewsletterEng" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalNewsletterEng">Enter your email to begin the download</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="email" value="" placeholder="" name="email" class="required email form-control" id="MailNews">
+                        <span class="input-group-btn">
+                            <button class="btn px-3 btn-outline-secondary" type="button">
+                                Download
+                            </button>
+                        </span>
+                    </div>
+                    <div class="checkbox mt-3">
+                        <label>
+                            <input type="checkbox" value="" checked>
+                            Suscribe to our newsletter?
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="landing">
+        <div class="h-100">
+            <div class="jumbotron jumbotron-fluid bg-transparent mb-0" id="intro-form">
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-light bg-light" id="sidebar-sticky">
+        <a class="py-3" href=""><i class="fas fa-user fa-2x"></i></a>
+        <a class="py-3" target="_blank" href="https://wa.me/5491160175615?text=Estoy%20interesado%20en%20recibir%20atencion%20personalizada"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a class="py-3" href=""><i class="fas fa-envelope fa-2x"></i></a>
+    </nav>
+    <div class="d-none" id="wzp">
+        <a target="_blank" href="https://wa.me/5491160175615?text=Estoy%20interesado%20en%20recibir%20atencion%20personalizada"><i class="fab fa-whatsapp wzp-float"></i></a>
+    </div>
+
+    <section class="p-5 mx-5 mt-4" id="form-cv">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>Trabajá con nosotros</h1>
+                <h4 class="pt-4">
+                    Quintino Material Handling Solutions, evoluciona constantemente, y por ello valoramos las propuestas
+                    espontaneas de nuevos talentos:
+                </h4>
+                <h4>
+                    Te contamos cuales son los perfiles que estamos buscando, para que te puedas postular en uno o en varios.
+                    Si no coincides con alguno de estos, pero igualmente crees que con tu talento podes sumar valor a nuestra
+                    organización, adelante dejanos tu CV en el apartado Otros perfiles.<br> Gracias por tu aporte.
+                </h4>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-fluid" src="/images/work-us.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="pt-5">
+            <h1>CARGA DE FORMULARIO</h1>
+        </div>
+
+        <h4>Indique los puestos de su interés</h4>
+        <form class="p-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check1" id="check1">
+                <label class="form-check-label" for="check1">
+                    Ingenieros y técnicos para el área comercial
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check2" id="check2">
+                <label class="form-check-label" for="check2">
+                    Ingenieros y técnicos para I+D
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check3" id="check3">
+                <label class="form-check-label" for="check3">
+                    Mantenimiento Eléctrico
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check4" id="check4">
+                <label class="form-check-label" for="check4">
+                    Mantenimiento Mecánico
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check5" id="check5">
+                <label class="form-check-label" for="check5">
+                    Producción en Planta de Procesos Metalmecánicos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check6" id="check6">
+                <label class="form-check-label" for="check6">
+                    Sistemas IT + IoT + Robótica + AI
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check7" id="check7">
+                <label class="form-check-label" for="check7">
+                    Otros perfiles
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check8" id="check8">
+                <label class="form-check-label" for="check8">
+                    Partner
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="check9" id="check9">
+                <label class="form-check-label" for="check9">
+                    Proveedor
+                </label>
+            </div>
+        </form>
+
+<form action="/Home/Form" class="p-2" enctype="multipart/form-data" id="frm" method="post" name="frm"><span class="field-validation-valid" data-valmsg-for="Perfiles" data-valmsg-replace="true" style="color:red;"></span><input name="__RequestVerificationToken" type="hidden" value="A_YuekXYHhGjcXqfGKuy25nDFX_7Icl22rHIxkXQASaQScwiJgyIFQq9Pomt5HXTVbbMqHabHu1J_tgwHJ5CY8rqk8wvHm2NeK5ltKAqRx01" /><input id="Perfiles" name="Perfiles" type="hidden" value="" />            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Linkedin">Perfil de Linkedin</label>
+                    <input class="form-control" id="Linkedin" maxlength="100" name="Linkedin" type="text" value="" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Telefono">Telefono de contacto</label>
+                    <input class="form-control" id="Telefono" maxlength="50" name="Telefono" type="text" value="" />
+                    <span class="field-validation-valid" data-valmsg-for="Telefono" data-valmsg-replace="true" style="color:red;"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Bio">Dejanos tu Mini-Bio</label>
+                <textarea class="form-control" cols="20" id="Bio" maxlength="300" name="Bio" rows="6">
+</textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Nombre">Nombre</label>
+                    <input class="form-control" id="Nombre" maxlength="50" name="Nombre" type="text" value="" />
+                    <span class="field-validation-valid" data-valmsg-for="Nombre" data-valmsg-replace="true" style="color:red;"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Apellido">Apellido</label>
+                    <input class="form-control" id="Apellido" maxlength="50" name="Apellido" type="text" value="" />
+                    <span class="field-validation-valid" data-valmsg-for="Apellido" data-valmsg-replace="true" style="color:red;"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Provincia">Provincia</label>
+                    <input class="form-control" id="Provincia" maxlength="50" name="Provincia" type="text" value="" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Ciudad">Ciudad</label>
+                    <input class="form-control" id="Ciudad" maxlength="50" name="Ciudad" type="text" value="" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Direccion">Direcci&#243;n</label>
+                <input class="form-control" id="Direccion" maxlength="50" name="Direccion" type="text" value="" />
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input class="form-control" id="Email" maxlength="50" name="Email" type="text" value="" />
+                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true" id="validacionEmail" style="color:red;"></span>
+            </div>
+        <div class="g-recaptcha" data-sitekey="6Le8h8EZAAAAAF-e6ZiEgbIsuVBeNBR_3aUbF_-n" data-callback="verifyCaptcha"></div>
+        <div id="g-recaptcha-error"></div>
+</form>        <br>
+        <button onclick="perfiles(event)" class="btn btn-warning px-5">Enviar</button>
+    </section>
+
+    <footer id="footer">
+        <marquee behavior="scroll" direction="left">Quintino Material Handling Solutions celebra su 25 aniversario &#x1F942;</marquee>
+        <div class="row p-4">
+            <div class="col-sm-4" id="logo-empresa">
+                <a href="/">
+                    <img class="img-fluid" src="/images/logo-gris.png" alt="logo quintino">
+                </a>
+            </div>
+            <div class="col-sm-4" id="empresa">
+                <p>
+                    Calle 62 N° 4765 | San Martín | Buenos Aires | Argentina <br>
+                    Tel: <a href="tel:+541147545556">+5411 4754-5556</a> | <a href="mailto:info@quintino.com.ar">info@quintino.com.ar</a>
+                </p>
+                <div>
+                    <a class="px-2" target="_blank" href="https://www.instagram.com/QuintinoMHS"><i class="fab fa-instagram-square"></i></a>
+                    <a class="px-2" target="_blank" href="https://twitter.com/QuintinoMHS"><i class="fab fa-twitter"></i></a>
+                    <a class="px-2" target="_blank" href="https://www.linkedin.com/company/quintino/?viewAsMember=true"><i class="fab fa-linkedin"></i></a>
+                    <a class="px-2" target="_blank" href="https://www.youtube.com/channel/UCM-yKuJZqzeQEieSDEN6Ymg?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a target="_blank" href="/images/f960.pdf"><img src="/images/dataweb.jpg" class="data-fiscal ml-3 mt-3 mb-0" alt=""></a>
+            </div>
+            <div class="col-sm-4 pr-5" id="novedades">
+                <div class="row news">
+                    <a class="twitter-timeline" data-height="200" data-width="500" data-theme="light" data-link-color="#ff9000"
+                       data-chrome="nofooter noborders noheader" href="https://twitter.com/QuintinoMHS?ref_src=twsrc%5Etfw">Tweets by QuintinoMHS</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" id="mapa-sitio">
+            <a class="btn-light bg-transparent" data-toggle="collapse" href="#sitemap" role="button" aria-expanded="false" aria-controls="sitemap">
+                <i class="fas fa-globe pr-2"></i>MAPA DEL SITIO<i class="pl-2 fas fa-angle-double-down"></i>
+            </a>
+            <div class="collapse text-left p-5" id="sitemap">
+                <h1><u><b>MAPA DEL SITIO / SITEMAP</b></u></h1>
+                <ul class="px-5 pb-4 fa-ul">
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#home">Home</a></li>
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#socios">Partners</a></li>
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#noticias">Noticias</a></li>
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#partners">Referencias</a></li>
+                    <li><span class="fa-li"><i class="fas fa-plus"></i></span><a data-toggle="collapse" href="#col1" role="button" aria-expanded="false" aria-controls="col1">Servicios</a></li>
+                    <ul class="py-0 pl-4 collapse fa-ul" id="col1">
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Análisis y Desarrollo</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Capacitación</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Diseño y Fabricación</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Consultoría y Asesoramiento</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Instalación + Implementación</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Life cycle project</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Mantenimiento Predictivo</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Mantenimiento Preventivo</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Modernización</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Service y Repuestos</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#services">Tech Tours</a></li>
+                    </ul>
+                    <li><span class="fa-li"><i class="fas fa-plus"></i></span><a data-toggle="collapse" href="#col2" role="button" aria-expanded="false" aria-controls="col2">Soluciones</a></li>
+                    <ul class="py-0 pl-4 collapse fa-ul" id="col2">
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#collapsive">Función y Tecnología</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#collapsive">Equipamiento</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#collapsive">Industria</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#collapsive">Partner</a></li>
+                    </ul>
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#projects">Casos de éxito</a></li>
+                    <li><span class="fa-li"><i class="fas fa-plus"></i></span><a data-toggle="collapse" href="#col3" role="button" aria-expanded="false" aria-controls="col3">Descargas</a></li>
+                    <ul class="py-0 pl-4 collapse fa-ul" id="col3">
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#downloads">Bienvenidos a la Intralogística 4.0</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#downloads">Let it Flow - Soluciones para el Flujo de Proyectos</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#downloads">Intralogística para Aeropuertos - BHS + Pax + Cargo</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#downloads">Welcome to Intralogistics 4.0 (ENG)</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#downloads">Let it Flow - Flow Process Solutions (ENG)</a></li>
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#downloads">Intralogistics for Airports - BHS + Pax + Air Cargo (ENG)</a></li>
+                    </ul>
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#quienes">Somos</a></li>
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.car-items').slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 2000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    </script>
+
+    <!-- parallax -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var barra = $(window).scrollTop();
+                var posicion = (barra * 0.40);
+
+                $('#landing').css({
+                    'background-position': '0 -' + posicion + 'px'
+                });
+                $('#contact').css({
+                    'background-position': '0 -' + posicion + 'px'
+                });
+            });
+        });
+    </script>
+    <!-- smooth scroll -->
+    <script type="text/javascript">
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- custom scrollbar non webkit-->
+    <script>
+        $(document).ready(function () {
+            if (!$.browser.webkit) {
+                $('body').html('<p>Sorry! Non webkit users. :(</p>');
+            }
+        });
+    </script>
+</body>
+</html>
