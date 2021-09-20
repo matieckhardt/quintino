@@ -1,6 +1,6 @@
  
 var filtroSeleccionado = "";
-var url = "https://quintino.ar/";
+var url = "/";
 var imagenes = null;
 
 

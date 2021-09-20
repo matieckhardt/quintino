@@ -6,7 +6,7 @@
         }
     });
 
-    var url = "https://quintino.ar/";
+    var url = "/";
 
     function obtenerFiltro() {
         var urlCompleto = url + "OperacionFiltros/ObtenerFiltros";

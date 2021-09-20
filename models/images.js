@@ -2,9 +2,9 @@ const { Schema, model } = require("mongoose");
 
 const imagesSchema = new Schema(
   {
-    imagenId: Number,
-    solucionId: Number,
-    imagen: Array,
+    ImagenId: Number,
+    SolucionId: Number,
+    Imagen: String,
   },
   { timestamps: true }
 );
