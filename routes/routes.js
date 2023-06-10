@@ -57,7 +57,7 @@ router.post("/login", (req, res) => {
   const { username, password } = req.body;
   // Perform your authentication logic here
   // For simplicity, we'll just check if the username and password are both "admin"
-  if (username === "admin" && password === "admin") {
+  if (username === "romina" && password === "Vidal23") {
     res.redirect("/admin");
   } else {
     res.send("Invalid username or password");
