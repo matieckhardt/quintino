@@ -1,0 +1,101 @@
+<section id="contact">
+    <div class="row py-3 border-t">
+        <div class="col-sm-8 p-5" id="contact-msj">
+            <h1>EN QUE TE PODEMOS AYUDAR</h1>
+            <form action="/" class="well form-horizontal" enctype="multipart/form-data" id="frm" method="post"
+                name="frm">
+                <input name="__RequestVerificationToken" type="hidden"
+                    value="Zp0mReetY1xCHnZLy1QnjkNxChP-9BYT4gXkeNRfxGteWiTVqfS5t3jj9ae9wxbExDpJfCALp5b5KpKJR_MGndBwnT1OmFwCPddbv9gXX1k1" />
+                <div class="form-group">
+                    <label for="Nombre">NOMBRE</label>
+                    <input class="form-control" id="Nombre" minlength="10" name="Nombre" required="required" type="text"
+                        value="" />
+                    <span class="field-validation-valid" data-valmsg-for="Nombre" data-valmsg-replace="true"
+                        style="color: red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Email">EMAIL</label>
+                    <input class="form-control" id="Email" minlength="10" name="Email" required="required" type="text"
+                        value="" />
+                    <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"
+                        id="validacionEmail" style="color: red"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Mensaje">MENSAJE</label>
+                    <textarea class="form-control" cols="20" id="Mensaje" minlength="20" name="Mensaje"
+                        required="required" rows="6" type="text"></textarea>
+                    <span class="field-validation-valid" data-valmsg-for="Mensaje" data-valmsg-replace="true"
+                        style="color: red"></span>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6Le8h8EZAAAAAF-e6ZiEgbIsuVBeNBR_3aUbF_-n"
+                    data-callback="verifyCaptcha"></div>
+                <div id="g-recaptcha-error"></div>
+                <br />
+                <input type="submit" value="ENVIAR" class="btn btn-warning px-5 mb-2" hidden />
+                <input type="button" onclick="enviarMensaje()" value="ENVIAR" class="btn btn-warning px-5 mb-2"
+                    id="submit-btn" />
+            </form>
+        </div>
+        <div class="col-sm-4 p-5" id="contact-datos">
+            <h1>CONTACTO</h1>
+            <div class="row pb-4">
+                <div class="col-xs-3 col-md-2 col-lg-1">
+                    <i class="fas fa-envelope icon"></i>
+                </div>
+                <div class="col-xs-9 col-md-10">
+                    <h5 class="pl-4 d-inline-block">EMAIL</h5>
+                    <a href="mailto:info@quintino.com.ar" class="pl-4 d-block">info@quintino.com.ar</a>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-xs-3 col-md-2 col-lg-1">
+                    <i class="fas fa-phone icon"></i>
+                </div>
+                <div class="col-xs-9 col-md-10">
+                    <h5 class="pl-4 d-inline-block">TELÉFONO</h5>
+                    <a href="tel:+54.11.7724.1571" class="pl-4 d-block">+54.11.7724.1571</a>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-xs-3 col-md-2 col-lg-1">
+                    <i class="far fa-clock icon"></i>
+                </div>
+                <div class="col-xs-9 col-md-10">
+                    <h5 class="pl-4 d-inline-block">HORARIO</h5>
+                    <p class="pl-4 d-block">Lunes a Viernes de 8 a 17hs.</p>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-xs-3 col-md-2 col-lg-1">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                </div>
+                <div class="col-xs-9 col-md-10">
+                    <h5 class="pl-4 d-inline-block">DIRECCIÓN</h5>
+                    <p class="pl-4 d-block">
+                        Calle 62 Profesor Rogelio Vidal 4765. <br />
+                        San Martin, Buenos Aires - Argentina
+                    </p>
+                </div>
+            </div>
+            <div class="row unite">
+                <div class="col-xs-3 col-md-2 col-lg-1">
+                    <i class="fas fa-file-alt icon"></i>
+                </div>
+                <div class="col-xs-9 col-md-10">
+                    <h4 class="pl-4 d-inline-block">UNITE AL EQUIPO</h4>
+                    <p class="pl-4 d-block">
+                        <a href="/Home/Form">Cargá tu CV aquí</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9547158585187!2d-58.55280958423742!3d-34.580012363752246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77c39142887%3A0x353184c44a7234f5!2sMetal%C3%BArgica%20Quintino!5e0!3m2!1ses!2sar!4v1567424772363!5m2!1ses!2sar"
+            width="100%" height="350" frameborder="0" style="
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+          " allowfullscreen=""></iframe>
+    </div>
+</section>

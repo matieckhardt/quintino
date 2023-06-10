@@ -1,0 +1,117 @@
+<section>
+    <div class="solucionesFull" style="margin: 0 0 0 0;width: 75vw; height 90vh">
+        {{#each solucion}}
+
+        <form method="POST" action="/admin/save">
+            <input name="id" value="{{_id}}" hidden>
+            <div class="card" id="{{_id}}"
+                style="margin:; max-width:100vw;height:auto;padding:0 30vw;border: solid; border-color:#004455; border-radius:12px;padding:25px">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>
+                            <label for="nombre">Titulo</label>
+                            <input class="form-control" value="{{Nombre}}" name="Nombre"
+                                style="font-weight:bold; color:">
+                        </h3>
+                        <br />
+                        <label for="description">Descripción</label>
+                        <input id="dataEditor" value="{{Description}}" hidden>
+                        <textarea id="summernote" class="form-control" style="width: 600px; height: 600px;"
+                            name="Description"> {{{Description}}}  </textarea>
+                    </div>
+                    <div class="col-4">
+                        <div id="1" class="carousel slide seleccionar">
+                            <div id="elementoCarouselInner{{@index}}" class="caca">
+                                {{#each imagesUrl}}
+
+                                {{>admin/imageUploader}}
+
+                                {{/each}}
+                            </div>
+                        </div>
+
+                        <ul style="font-weight:800; color:#004455">
+                            <li>
+
+                                <input class="form-control" value="{{Bullet1}}" name="Bullet1">
+                            </li>
+                            <li>
+
+                                <input class="form-control" value="{{Bullet2}}" name="Bullet2">
+                            </li>
+                            <li>
+
+                                <input class="form-control" value="{{Bullet3}}" name="Bullet3">
+                            </li>
+                            <li>
+
+                                <input class="form-control" value="{{Bullet4}}" name="Bullet4">
+                            </li>
+                            <li>
+
+                                <input class="form-control" value="{{Bullet5}}" name="Bullet5">
+                            </li>
+                            <li>
+
+                                <input class="form-control" value="{{Bullet6}}" name="Bullet6">
+                            </li>
+                            <li>
+
+                                <input class="form-control" value="{{Bullet7}}" name="Bullet7">
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li>
+                                        <label for="link1Descripcion">Link1 Descripción</label>
+                                        <input class="form-control" value="{{Link1Descripcion}}"
+                                            name="Link1Descripcion">
+                                    </li>
+
+                                    <li>
+                                        <label for="link2Descripcion">Link2 Descripción</label>
+                                        <input class="form-control" value="{{Link2Descripcion}}"
+                                            name="Link2Descripcion">
+                                    </li>
+                                    <li>
+                                        <label for="link3Descripcion">Link3 Descripción</label>
+                                        <input class="form-control" value="{{Link3Descripcion}}"
+                                            name="Link3Descripcion">
+                                    </li>
+                            </div>
+                            <div class="col">
+                                <li>
+                                    <label for="link1">Link1</label>
+                                    <input class="form-control" name="Link1" value="{{Link1}}">
+                                </li>
+                                <li>
+                                    <label for="link2">Link2</label>
+                                    <input class="form-control" name="Link2" value="{{Link2}}">
+                                </li>
+
+                                <li>
+                                    <label for="link3">Link3</label>
+                                    <input class="form-control" name="Link3" value="{{Link3}}">
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </form>
+        {{/each}}
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('#summernote').summernote({
+            placeholder: 'Hello Bootstrap 4',
+            tabsize: 2,
+            height: 500
+        });
+    });
+
+</script>

@@ -1,0 +1,28 @@
+<section class="clearfix" id="market">
+    <aside id="filtros" style="display:block; position:sticky">
+        <div class="filtros-on">
+            <h3>FILTROS</h3>
+            <h6><a href="/soluciones">-Eliminar todos los filtros-</a></h6>
+        </div>
+        {{#each categorias}}
+        <div class="form-check filtro-divisor">
+            <div id="recuadroFiltro"><a><a data-toggle="collapse" id="nombreFiltro{{{@index}}}"
+                        href="#collapseFiltro{{{@index}}}" role="button" aria-expanded="true"
+                        aria-controls="collapseFiltro0" class="">
+                        <h6>{{_id}}</h6>
+                    </a></a>
+
+                <div id="collapseFiltro{{{@index}}}" class="collapse show" style="">
+                    <ol id="nombreSubcategorias0" class="filtro-lista">
+                        {{#each ListaSubCategorias }}
+                        <li id="listaDeSubcategorias01" class="filtro-check"><a class="form-check-label"
+                                href="/soluciones/filter/{{SubcategoriaId}}">{{Nombre}}</a></li>
+                        {{/each}}
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+        </div>
+    </aside>

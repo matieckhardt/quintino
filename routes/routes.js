@@ -1,11 +1,13 @@
-  
 const { Router } = require("express");
 const nodemailer = require("nodemailer");
-const Filtros = require("../models/filtros")
-const Images = require("../models/images")
-const Categorias = require("../models/categorias")
-const Soluciones = require("../models/soluciones")
+
+const Images = require("../models/images");
+
 const path = require("path");
+const homeCtrl = require("../controllers/home.controller");
+const soluCtrl = require("../controllers/solutions.controller");
+const adminCtrl = require("../controllers/admin.controller");
+const catCtrl = require("../controllers/cat.controller");
 
 const router = Router();
 
@@ -13,44 +15,59 @@ const ruta = path.join(__dirname, "../public/");
 
 // rutas de quintino
 
-router.get("/", (req, res) => {
-  res.send(index);
-});
-router.get("/index", function (req, res) {
-  res.sendFile(ruta + "Index.html");
-});
+router.get("/", homeCtrl.getPage);
+router.get("/index", homeCtrl.getPage);
+
 router.get("/Home/Services", function (req, res) {
   res.sendFile(ruta + "servicios.html");
 });
-router.get("/Home/Showroom", function (req, res) {
-  res.sendFile(ruta + "soluciones.html");
-});
+router.get("/soluciones", soluCtrl.getPage);
+router.get("/soluciones/filter/:catNumber", soluCtrl.getFilterPage);
+router.get("/soluciones/:id", soluCtrl.getSolucionFull);
+
 router.get("/Home/Form", function (req, res) {
   res.sendFile(ruta + "form.html");
 });
 
+router.get("/homeHbs", homeCtrl.getPage);
 
-
-// Rutas Mongo
-
-router.get("/OperacionFiltros/ObtenerFiltros", async (req, res) => {
-  const data = await Categorias.find();
-  res.json(data);
+router.get("/login", function (req, res) {
+  res.render("login");
 });
 
-router.get("/OperacionFiltros/ObtenerImagenes", async (req, res) => {
-  const data = await Images.find();
-  res.json(data);
-});
-router.get("/OperacionFiltros/ObtenerSoluciones", async (req, res) => {
-  const data = await Soluciones.find();
-  res.json(data);
+router.get("/admin", adminCtrl.getPage);
+
+router.get("/admin/categorias", adminCtrl.getCategories);
+router.post("/admin/cat/new", catCtrl.createCat);
+router.post("/admin/cat/save", catCtrl.save);
+router.delete("/admin/cat/delete/:id", catCtrl.delCat);
+
+router.get("/admin/usuarios", adminCtrl.getPage);
+router.get("/admin/consultas", adminCtrl.getPage);
+router.get("/admin/curriculums", adminCtrl.getPage);
+
+router.get("/admin/:id", adminCtrl.getSolucion);
+router.get("/admin/new/solucion/", adminCtrl.newSolu);
+router.post("/admin/create", adminCtrl.createSolu);
+
+router.post("/admin/save", adminCtrl.save);
+router.delete("/admin/delete/:id", adminCtrl.delSolu);
+
+router.post("/login", (req, res) => {
+  const { username, password } = req.body;
+  // Perform your authentication logic here
+  // For simplicity, we'll just check if the username and password are both "admin"
+  if (username === "admin" && password === "admin") {
+    res.redirect("/admin");
+  } else {
+    res.send("Invalid username or password");
+  }
 });
 
-// POST 
+// POST
 
 router.post("/postCat", async (req, res) => {
-  const datos = [ ];
+  const datos = [];
   try {
     datos.forEach(async (dato) => {
       const images = new Images(dato);
@@ -62,7 +79,5 @@ router.post("/postCat", async (req, res) => {
     res.status(500).send("There was a problem registering the client");
   }
 });
-
-
 
 module.exports = router;

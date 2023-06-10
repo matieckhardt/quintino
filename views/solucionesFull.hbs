@@ -1,0 +1,54 @@
+<section>
+    <div class=" solucionesFull" style="margin: 0 0 0  0 ;width:80vw; height 90vh">
+        {{#each soluciones}}
+        <div class="card" id="{{_id}}"
+            style="margin:5vh 10vw ; max-width:60vw;height:auto;padding:0 30vw;border: solid; border-color:#004455; border-radius:12px;padding:25px">
+
+
+            <div class="row">
+                <div class="col-8">
+                    <h3 style="font-weight:bold; color:">{{Nombre}}</h3>
+                    <div>{{{Description}}}</div>
+                </div>
+                <div class="col-4">
+                    <div id="1" class="carousel slide seleccionar">
+
+                        <div id="elementoCarouselInner{{@index}}" class="caca">
+                            {{#each imagesUrl}}
+
+                            <img class="img-fluid " style="margin-top:20px; height: 309px; border-radius:12px; " id="1"
+                                src="{{this}}" />
+
+                            {{/each}}
+                        </div>
+                    </div>
+
+                    <ul style="font-weight:800; color:#004455">
+                        <h6>» {{Bullet1}}</h6>
+                        <h6>» {{Bullet2}}</h6>
+                        <h6>» {{Bullet3}}</h6>
+                        <h6>» {{Bullet4}}</h6>
+                        <h6>» {{Bullet5}}</h6>
+                        <h6>» {{Bullet6}}</h6>
+                        <h6>» {{Bullet7}}</h6>
+                    </ul>
+                    <ul>
+                        <h6><a style="text-decoration: none;" href="{{Link1}}" target="_blank">Link:
+                                {{Link1Descripcion}}</a>
+                        </h6>
+                        <h6><a style="text-decoration: none;" href="{{Link2}}" target="_blank">Link:
+                                {{Link2Descripcion}}</a>
+                        </h6>
+                        <h6><a style="text-decoration: none;" href="{{Link3}}" target="_blank">Link:
+                                {{Link3Descripcion}}</a>
+                        </h6>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+
+</section>

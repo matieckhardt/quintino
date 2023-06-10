@@ -1,0 +1,134 @@
+<div class="container" style="width: 100vw;">
+    <h1>Soluciones</h1>
+
+    <div class="card" id="solucionForm" style="display: block;">
+        <div class="card-header">
+            <h5 class="card-title" id="formTitle"></h5>
+        </div>
+        <div class="card-body">
+            <form id="solucionFormulario" method="post" action="/admin/save/{{solucion.[0]._id}}">
+                {{#each solucion}}
+                <input id="id" name="id" value="{{_id}}" hidden>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="solucionId">SolucionId</label>
+                            <input type="text" class="form-control" id="solucionId" name="solucionId"
+                                value="{{SolucionId}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" value="{{Nombre}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description" name="description"
+                                value="{{Description}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descriptionCorta">Descripción Corta</label>
+                            <input type="text" class="form-control" id="descriptionCorta" name="descriptionCorta"
+                                value="{{DescriptionCorta}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="youtube">Youtube</label>
+                            <input type="text" class="form-control" id="youtube" name="youtube" value="{{Youtube}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="categorias">Categorias</label>
+                            <input type="text" class="form-control" id="categorias" name="categorias"
+                                value="{{Categorias}}" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="bullet1">Bullet1</label>
+                            <input type="text" class="form-control" id="bullet1" name="bullet1" value="{{Bullet1}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bullet2">Bullet2</label>
+                            <input type="text" class="form-control" id="bullet2" name="bullet2" value="{{Bullet2}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bullet3">Bullet3</label>
+                            <input type="text" class="form-control" id="bullet3" name="bullet3" value="{{Bullet3}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bullet4">Bullet4</label>
+                            <input type="text" class="form-control" id="bullet4" name="bullet4" value="{{Bullet4}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bullet5">Bullet5</label>
+                            <input type="text" class="form-control" id="bullet5" name="bullet5" value="{{Bullet5}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bullet6">Bullet6</label>
+                            <input type="text" class="form-control" id="bullet6" name="bullet6" value="{{Bullet6}}"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="bullet7">Bullet7</label>
+                            <input type="text" class="form-control" id="bullet7" name="bullet7" value="{{Bullet7}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link1">Link1</label>
+                            <input type="text" class="form-control" id="link1" name="link1" value="{{Link1}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link2">Link2</label>
+                            <input type="text" class="form-control" id="link2" name="link2" value="{{Link2}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link3">Link3</label>
+                            <input type="text" class="form-control" id="link3" name="link3" value="{{Link3}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clasificacion">Clasificacion</label>
+                            <input type="text" class="form-control" id="clasificacion" name="clasificacion"
+                                value="{{Clasificacion}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orden">Orden</label>
+                            <input type="text" class="form-control" id="orden" name="orden" value="{{Orden}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="oculto">Oculto</label>
+                            <input type="text" class="form-control" id="oculto" name="oculto" value="{{Oculto}}"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link1Descripcion">Link1 Descripcion</label>
+                            <input type="text" class="form-control" id="link1Descripcion" name="link1Descripcion"
+                                value="{{Link1Descripcion}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link2Descripcion">Link2 Descripcion</label>
+                            <input type="text" class="form-control" id="link2Descripcion" name="link2Descripcion"
+                                value="{{Link2Descripcion}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="link3Descripcion">Link3 Descripcion</label>
+                            <input type="text" class="form-control" id="link3Descripcion" name="link3Descripcion"
+                                value="{{Link3Descripcion}}" required>
+                        </div>
+                    </div>
+                </div>
+
+                {{/each}}
+                <!-- Agrega más campos según tus necesidades -->
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container" style="width: 100vw;"></div>

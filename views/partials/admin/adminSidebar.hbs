@@ -1,0 +1,93 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
+    style="display:block;position:fixed; width: 280px;height: 100vh">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
+        style="display:block;position:fixed; width: 280px;height: 100vh">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi pe-none me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Quintino</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="/admin" class="nav-link link-body-emphasis " aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="/admin"></use>
+                    </svg>
+                    Soluciones
+                </a>
+            </li>
+            <li>
+                <a href="/admin/categorias" class="nav-link link-body-emphasis">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="/admin/categorias"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li hidden>
+                <a href="/admin/usuarios" class="nav-link link-body-emphasis">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="/admin/usuarios"></use>
+                    </svg>
+                    Usuarios
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/consultas" class="nav-link link-body-emphasis">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="/admin/consultas"></use>
+                    </svg>
+                    Consultas
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/curriculums" class="nav-link link-body-emphasis">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="/admin/curriculums"></use>
+                    </svg>
+                    Curriculums
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>rverstraete</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+
+
+                <li><a class="dropdown-item" href="/login">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function setActiveButton() {
+        const currentUrl = window.location.pathname;
+
+        const sidebarLinks = document.querySelectorAll('.nav-link');
+        sidebarLinks.forEach(link => {
+            const linkUrl = link.getAttribute('href');
+
+            if (linkUrl === currentUrl) {
+                link.classList.add('active');
+                link.classList.remove("link-body-emphasis");
+            } else {
+                link.classList.remove('active');
+
+            }
+        });
+    }
+
+    // Call the function to set the active button when the page loads
+    window.addEventListener('DOMContentLoaded', setActiveButton);
+</script>

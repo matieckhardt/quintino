@@ -1,0 +1,21 @@
+<section id="noticias">
+    <h1 class="px-3">QUINTINO NEWS</h1>
+    <div class="row py-3">
+        {{#each news }}
+        <div class="col-sm-4">
+            <div class="card">
+                <a target="_blank" href="{{link}}">
+                    <img src="{{imageUrl}}" class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body">
+                    <a target="_blank" href="{{link}}">
+                        <h5 class="card-title">
+                            {{{titulo}}}
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>

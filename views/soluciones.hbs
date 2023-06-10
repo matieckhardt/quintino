@@ -1,0 +1,35 @@
+<section id="showroom">
+    <div id="rowPx4" class="row px-4 pt-2">
+        {{#each soluciones}}
+        <a href="/soluciones/{{_id}}">
+            <div id="elementoColumna{{@index}}" class="col-md-6 col-lg-4 col-xxl-3">
+                <div id="elementoCardMy4{{@index}}" class="card my-4" style="height: auto;">
+                    <div id="triangulo{{@index}}" class="triangulo"><img src="../../images/esquina{{Clasificacion}}.png"
+                            alt="">
+                    </div>
+                    <div id="1" class="carousel slide seleccionar">
+
+                        <div id="elementoCarouselInner{{@index}}" class="caca">
+                            {{#each imagesUrl}}
+
+                            <img class="img-fluid " style="height: 309px; object-fit:cover" id="1" src="{{this}}" />
+
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div id="" class="card-body">
+                        <h5 style="height: 70px;" class="card-title">{{Nombre}}</h5>
+                        <p style="height: 300px;" class="card-text">{{DescriptionCorta}}</p>
+
+                    </div>
+                    <div class="card-footer"><small class="text-muted"><a style="vertical-align: text-bottom;"
+                                target="_blank" href="{{Youtube}}"><i class="fab fa-youtube fa-2x text-danger pr-3"
+                                    aria-hidden="true"></i>Ver
+                                video de YouTube</a></small></div>
+
+                </div>
+            </div>
+        </a>
+        {{/each}}
+    </div>
+</section>
