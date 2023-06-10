@@ -53,6 +53,30 @@ adminCtrl.getCategories = async (req, res) => {
     res.status(500).send("Eso no es un id valido");
   }
 };
+adminCtrl.getCategoriesId = async (req, res) => {
+  try {
+    const solu = await Soluciones.find({ _id: req.params.id });
+    const cat = await SubCategorias.aggregate([
+      {
+        $group: {
+          _id: "$CategoriaNombre",
+          ListaSubCategorias: {
+            $push: "$$ROOT",
+          },
+        },
+      },
+    ]);
+
+    return res.render("solucionCat", {
+      soluId: req.params.id,
+      solucion: { catNumber: solu[0].catNumber },
+      categorias: cat.sort((a, b) => a.SubcategoriaId - b),
+      layout: "adminLayout",
+    });
+  } catch (error) {
+    res.status(500).send("Eso no es un id valido");
+  }
+};
 
 adminCtrl.newSolu = async (req, res) => {
   try {
@@ -83,6 +107,14 @@ adminCtrl.save = async (req, res) => {
       req.body
     );
 
+    return res.status(200).redirect("/admin");
+  } catch (error) {
+    res.status(500).send("There was a problem registering the mate");
+  }
+};
+
+adminCtrl.soluCat = async (req, res) => {
+  try {
     return res.status(200).redirect("/admin");
   } catch (error) {
     res.status(500).send("There was a problem registering the mate");

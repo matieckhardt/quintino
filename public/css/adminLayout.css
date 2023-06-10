@@ -17,11 +17,11 @@ a {
   color: #333;
 }
 td {
-  font-size: 12px;
+  font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 70px;
+  max-width: 200px;
 }
 ul.slides {
   display: block;

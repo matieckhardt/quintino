@@ -1,0 +1,36 @@
+<div class="card" id="{{_id}}"
+    style="height:auto;padding:0 30vw;border: solid; border-color:#004455; border-radius:12px;padding:25px">
+    <form method="POST" action="/admin/save/solucat">
+        <div class="row">
+            <input name="id" value="{{soluId}}" hidden />
+            <input type="text" id="catNumber" value="{{solucion.catNumber}}" hidden></input>
+            {{#each categorias}}
+            <div class="col-3">
+                <h1>{{_id}}</h1>
+                <p>{{Nombre}}</p>
+                {{#each ListaSubCategorias}}
+                <input name="catNumber" type="checkbox" value="{{SubcategoriaId}}" id="{{SubcategoriaId}}">
+                <label for="{{SubcategoriaId}}">{{Nombre}}</label><br />
+                {{/each}}
+            </div>
+            {{/each}}
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the checkboxes
+        const checkboxes = document.querySelectorAll('input[name="catNumber"]');
+        const catNumberInput = document.getElementById("catNumber");
+        const catNumber = catNumberInput.value.split(",");
+
+        // Check if the checkbox should be checked
+        checkboxes.forEach(checkbox => {
+            if (catNumber.includes(checkbox.value)) {
+                checkbox.checked = true;
+            }
+        });
+    });
+</script>

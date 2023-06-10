@@ -38,6 +38,7 @@ router.get("/login", function (req, res) {
 router.get("/admin", adminCtrl.getPage);
 
 router.get("/admin/categorias", adminCtrl.getCategories);
+router.get("/admin/categorias/:id", adminCtrl.getCategoriesId);
 router.post("/admin/cat/new", catCtrl.createCat);
 router.post("/admin/cat/save", catCtrl.save);
 router.delete("/admin/cat/delete/:id", catCtrl.delCat);
@@ -51,6 +52,7 @@ router.get("/admin/new/solucion/", adminCtrl.newSolu);
 router.post("/admin/create", adminCtrl.createSolu);
 
 router.post("/admin/save", adminCtrl.save);
+router.post("/admin/save/soluCat", adminCtrl.save);
 router.delete("/admin/delete/:id", adminCtrl.delSolu);
 
 router.post("/login", (req, res) => {
