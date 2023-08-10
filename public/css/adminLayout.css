@@ -12,6 +12,9 @@
   font-style: normal;
 }
 body,
+h2 {
+  color: white;
+}
 a {
   font-family: "urw-din", "Varela Round", sans-serif;
   color: #333;
@@ -32,7 +35,13 @@ ul.slides {
   overflow: hidden;
   list-style: none;
 }
+.nav-link .link-body-emphasis {
+  color: white;
+}
 
+#navItem {
+  color: white !important;
+}
 .slides * {
   user-select: none;
   -ms-user-select: none;
@@ -42,6 +51,15 @@ ul.slides {
   -webkit-touch-callout: none;
 }
 
+.nav-pills .nav-link.active {
+  color: #333 !important;
+  font-weight: 900 !important;
+  background-color: #fbb144;
+}
+
+.nav-pills {
+  color: white;
+}
 ul.slides input {
   display: none;
 }
